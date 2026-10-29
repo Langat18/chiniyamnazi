@@ -1,0 +1,16 @@
+:root {
+  /* Brand palette sampled from the prospectus */
+  --olive: #98a315;
+  --lime: #b8f225;
+  --brown: #2b1d0a;
+  --cream: #faf6e2;
+  --sand: #efebdd;
+  --black: #050505;
+  --white: #ffffff;
+
+  --font-body: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+
+  --radius: 6px;
+  --max: 68rem;
+}

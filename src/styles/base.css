@@ -1,0 +1,9 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-body); color: var(--brown); background: var(--cream); line-height: 1.6; }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; line-height: 1.1; margin: 0 0 .6em; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+.container { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
