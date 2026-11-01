@@ -19,7 +19,12 @@
 .hero__seal { width: 6rem; height: 6rem; object-fit: contain; min-height: 0; flex: none; }
 .hero__logo { width: auto; height: 5rem; max-width: 40%; object-fit: contain; min-height: 0; flex: none; }
 .hero__stage { position: relative; min-height: 34rem; display: flex; align-items: flex-end; color: var(--white); }
-.hero__bg { position: absolute; inset: 0; }
+.hero__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
+.hero__slide.is-active { opacity: 1; }
+.hero__stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 35%, rgba(0, 0, 0, .6)); }
+.hero__date, .hero__titles, .hero__dots { z-index: 1; }
+.hero__date { position: absolute; top: 1.5rem; right: 1.5rem; text-align: center; font-family: var(--font-display); line-height: .95; color: var(--lime); }.hero__dots button { width: .8rem; height: .8rem; padding: 0; border-radius: 50%; border: 2px solid var(--white); background: transparent; cursor: pointer; }
+.hero__dots button[aria-current='true'] { background: var(--lime); border-color: var(--lime); }
 .hero__date { position: absolute; top: 1.5rem; right: 1.5rem; text-align: center; font-family: var(--font-display); line-height: .95; }
 .hero__date span { display: block; color: var(--lime); font-size: 1.8rem; text-transform: uppercase; }
 .hero__date strong { display: block; font-size: 5rem; }

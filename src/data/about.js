@@ -10,6 +10,11 @@ export const hero = {
   edition: 'Ganze Edition',
 };
 
+export const heroSlides = [
+  { image: 'hero-1', alt: 'Coconut palms on the Kenyan coast' },
+  { image: 'hero-2', alt: 'Community members gathered under the trees at an Under the Tree Series event' },
+];
+
 export const director = {
   name: 'Dr. Fredrick Mukabi',
   role: 'Message from Director',
